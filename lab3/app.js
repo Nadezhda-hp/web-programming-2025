@@ -5,8 +5,8 @@ export default function appSrc(express, bodyParser, createReadStream, crypto, ht
   app.use((req, res, next) => {
     res.set({
       'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'GET,POST,PUT,PATCH,OPTIONS,DELETE',
-      'Access-Control-Allow-Headers': 'Content-Type,ngrok-skip-browser-warning',
+      'Access-Control-Allow-Methods': '*',
+      'Access-Control-Allow-Headers': 'Access-Control-Allow-Headers, Content-Type, x-author, ngrok-skip-browser-warning',
       'Cache-Control': 'no-store'
     });
     next();
